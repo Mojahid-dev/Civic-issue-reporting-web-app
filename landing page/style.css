@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+/*  CSS Variables  */
+
+:root {
+  /* FONT COLOR */
+  --primary-color: #1e3b8a;
+  --secondary-color: #121317;
+  --third-color: #4b5563;
+  --forth-color: #ffffff;
+
+  /* BUTTON COLOR */
+  --lm-color: #0d9488;
+  --cta-color: #334d94;
+  --secondary-cta-color: #ebecf2;
+  --card-cta-color: #385298;
+
+  /* CARD COLOR */
+  --card-color: #1f3c8a;
+
+  /* BG COLOR */
+  --bg-color: #f6f6f8;
+  --trust-card-color: #ffffff;
+
+  /* HEADER COLOR */
+  --header-color: #fdfdfe;
+
+  /* FONT SIZES */
+
+  --l-font-size: 72px;
+  --md-font-size: 14px;
+  --logo-fs: 20px;
+  --cta-fs: 18px;
+  --title-fs: 36px;
+  --card-fs: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background-color: var(--header-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.header .logo {
+  font-size: var(--logo-fs);
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 25px;
+  font-size: var(--md-font-size);
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.header .reg-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header .reg-btn a.sign-in {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.header .reg-btn a.sign-in:hover {
+  background-color: var(--secondary-cta-color);
+}
+
+.header .reg-btn a.partner-cta {
+  text-decoration: none;
+  color: var(--forth-color);
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.header .reg-btn a.partner-cta:hover {
+  background-color: var(--cta-color);
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vw;
+    gap: 30px;
+}
+
+.left-section {
+    width: 45vw;
+    height: 60vh;
+    /* background-color: #0d9488; */
+}
+
+.left-section .info-div {
+    width: 95%;
+    border-radius: 20px;
+    padding: 3px 5px;
+    height: 7%;
+    background-color: #E0E3ED;
+}
+
+.left-section .info-div .reach {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+.left-section span {
+    font-size: var(--l-font-size);
+    font-weight: 800;   
+
+}
+
+.left-section span.text1 {
+    color: var(--secondary-color);
+}
+
+.left-section span.text2 {
+    display: block;
+    color: var(--primary-color);
+}
+
+.hero .left-section .about-web {
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--third-color);
+    line-height: 28px;
+}
+
+.issue-report-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: var(--forth-color);
+    margin-top: 20px;
+}
+
+.right-section {
+    width: 40vw;
+    height: 60vh;
+    background-color: #0d9488;
+}
+
