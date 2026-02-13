@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -33,7 +35,7 @@
     <main class="hero">
         <div class="left-section">
             <div class="info-div">
-                <span class="reach">NOW AVAILABLE IN 150+ CITIES</span>
+                <span class="reach"><i class="ri-circle-fill"></i> NOW AVAILABLE IN 150+ CITIES</span>
             </div>
 
             <span class="text1">Building Smarter,</span>
@@ -47,11 +49,11 @@
 
             <div class="cta-btn">
                 <button class="cta issue-report-btn">
-                    Report an Issue
+                    <i class="ri-spam-2-line"></i> Report an Issue
                 </button>
 
                 <button class="cta issue-map-btn">
-                    Explore Live Map
+                    <i class="ri-map-2-line"></i> Explore Live Map
                 </button>
 
             </div>
@@ -71,9 +73,84 @@
         </div>
     </section>
 
+    <section class="about-service">
+
+        <h2 class="title">Precision-Built Infrastructure</h2>
+
+        <p class="dets">Sophisticated tools designed for the demands of 21st-century urban environment</p>
+
+        <div class="about-cards">
+            <div class="card1">
+                <div class="icon">
+                    <i class="ri-shield-check-line"></i>
+                </div>
+
+                <h1 class="card-title">Evidence-First Reporting</h1>
+
+                <p class="para">High-fidelity data collection with verified GPS metadata and tamper-proof photo logs.</p>
+
+                <div class="learn-more first">
+                    <a href="">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a> 
+                </div>
+            </div>
+            
+            <div class="card1">
+                <div class="icon">
+                    <i class="ri-map-pin-2-line"></i>
+                </div>
+
+                <h1 class="card-title">Hyper-Local Precision</h1>
+
+                <p class="para">Sub-meter accuracy for pinpoint infrastructure maintenance and asset management.</p>
+
+                <div class="learn-more second">
+                    <a href="">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="icon">
+                    <i class="ri-line-chart-fill"></i>
+                </div>
+
+                <h1 class="card-title">Real-time Intelligence</h1>
+
+                <p class="para">Powerful heatmaps and trend analysis for proactive city-wide maintenance cycles.</p>
+
+                <div class="learn-more third">
+                    <a href="">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a> 
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="icon">
+                    <i class="ri-brain-2-line"></i>
+                </div>
+
+                <h1 class="card-title">Automated Triage</h1>
+
+                <p class="para">Advanced AI categorizes and routes issues to correct departments instantly.</p>
+
+                <div class="learn-more forth">
+                    <a href="">
+                        Learn More <i class="ri-arrow-right-line"></i>
+                    </a> 
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
     <script>
         // Initialize map
-        var map = L.map('map').setView([25.6156, 85.1152], 14); // NYC
+        var map = L.map('map').setView([25.6156, 85.1152], 14); // BIHAR
 
         // Add OpenStreetMap tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
