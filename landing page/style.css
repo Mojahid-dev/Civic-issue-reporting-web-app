@@ -122,7 +122,7 @@ body {
 /* HERO SECTION */
 
 .hero {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     margin-top: 8vw;
@@ -170,7 +170,12 @@ body {
     line-height: 28px;
 }
 
-.issue-report-btn {
+.cta-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.cta {
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 10px;
@@ -180,10 +185,56 @@ body {
     color: var(--forth-color);
     margin-top: 20px;
 }
+.issue-map-btn {
+    background-color: var(--secondary-cta-color);
+    color: var(--primary-color);
+}
+
+.issue-map-btn:hover {
+    background-color: #E0E3ED;
+}
+
+.issue-report-btn:hover {
+    background-color: #29448f;
+    transform: scale(1.01);
+    box-shadow: 0 5px 5px black;
+}
 
 .right-section {
     width: 40vw;
     height: 60vh;
-    background-color: #0d9488;
+}
+
+
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.trust {
+    background-color: #fff;
+    width: 100vw;
+    height: 30vh;
+    margin-top: 20vw;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    color: #9ca3a4;
+}
+
+.municipal-trust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+img {
+    width: 80px;
 }
 

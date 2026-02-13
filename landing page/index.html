@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CivicFix</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
+
 <body>
     <header class="header">
         <div class="logo">CivicFix</div>
@@ -36,14 +41,50 @@
             <span class="text3">Cities Together</span>
 
             <p class="about-web">
-                Empower your community with the leading civic intelligence platform designed for modern municipalities. Real-time reporting meets enterprise-grade infrastructure management.
+                Empower your community with the leading civic intelligence platform designed for modern municipalities.
+                Real-time reporting meets enterprise-grade infrastructure management.
             </p>
 
-            <button class="issue-report-btn">
-                Report an Issue
-            </button>
+            <div class="cta-btn">
+                <button class="cta issue-report-btn">
+                    Report an Issue
+                </button>
+
+                <button class="cta issue-map-btn">
+                    Explore Live Map
+                </button>
+
+            </div>
         </div>
-        <div class="right-section"></div>
+        <div class="right-section">
+            <div id="map"></div>
+
+        </div>
     </main>
+
+    <section class="trust">
+        <p>Trusted By 100+ Municipalities</p>
+        <div class="municipal-trust">
+            <img src="/assets/municipal.webp" alt="">
+            <img src="/assets/municipal2.webp" alt="">
+            <img src="/assets/municipalities.webp" alt="">
+        </div>
+    </section>
+
+    <script>
+        // Initialize map
+        var map = L.map('map').setView([25.6156, 85.1152], 14); // NYC
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add marker
+        var marker = L.marker([25.6156, 85.1152]).addTo(map);
+        marker.bindPopup("New Report: Water Leakage").openPopup();
+    </script>
+
 </body>
+
 </html>
