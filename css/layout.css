@@ -1,0 +1,32 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+   /* padding-top: 80px; */
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(253, 253, 254, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8vw;
+  gap: 30px;
+}
