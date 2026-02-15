@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+/* Optimize Font Loading with display: swap to avoid FOIT/FOUT */
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
 
 @import url(css/components.css);
 @import url(css/layout.css);
 @import url(css/variables.css);
 
+/* Reduce Animation Impact - Only animate when user prefers motion */
 @keyframes dimAndLight {
   0% {
     opacity: 1;
@@ -16,11 +18,26 @@
   }
 }
 
+/* Optimize for CSS Containment */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "inter", sans-serif;
+  font-family:
+    "inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+/* Reduce CLS - Set explicit dimensions for header */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Prevent layout shift from scrollbar */
+  scrollbar-gutter: stable;
 }
 
 .header .logo {
@@ -376,4 +393,3 @@ p {
 .step-cards_reg {
   display: flex;
 }
-
