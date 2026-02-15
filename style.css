@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
 
-/*  CSS Variables  */
-@import url(css/variables.css);
 @import url(css/components.css);
 @import url(css/layout.css);
+@import url(css/variables.css);
 
 @keyframes dimAndLight {
   0% {
@@ -34,6 +33,7 @@
   display: flex;
   gap: 25px;
   font-size: var(--md-font-size);
+  font-weight: 700;
 }
 
 .navigation ul li {
@@ -81,16 +81,22 @@
 }
 
 /* HERO SECTION */
+
+.left-section,
+.right-section {
+  flex: 1;
+}
+
 .left-section {
-  width: 45vw;
-  height: 60vh;
+  width: 43vw;
+  margin-left: 40px;
   /* background-color: #0d9488; */
 }
 
 .left-section .info-div {
   width: 95%;
   border-radius: 20px;
-  padding: 3px 5px;
+  padding: 5px 6px;
   height: 7%;
   background-color: #e0e3ed;
 }
@@ -115,7 +121,7 @@
 }
 
 .hero .left-section .about-web {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
   color: var(--third-color);
   line-height: 28px;
@@ -123,9 +129,8 @@
 
 .cta-btn {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
-
 
 .cta i {
   font-size: 19px;
@@ -135,7 +140,6 @@
   background-color: var(--secondary-cta-color);
   color: var(--primary-color);
 }
-
 
 .issue-map-btn:hover {
   background-color: #e0e3ed;
@@ -160,8 +164,8 @@
 .trust {
   background-color: #fff;
   width: 100%;
-  height: 30vh;
-  margin-top: 20vw;
+  padding: 80px 0;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -186,7 +190,7 @@ img {
 
 .about-service {
   width: 100%;
-  height: 70vh;
+  padding: 80px 0;
   background-color: var(--bg-color);
   display: flex;
   margin-top: 5%;
@@ -205,11 +209,10 @@ img {
 .about-cards {
   margin-top: 35px;
   width: 100%;
-  height: 46vh;
   display: flex;
-  justify-content: space-around;
-  padding: 5px 10px;
-  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .icon {
@@ -230,7 +233,7 @@ h1 {
   font-size: 20px;
 }
 
-.card-title {
+.about-service .about-cards .card-title {
   font-weight: 800;
   color: #121317;
   margin-top: 12px;
@@ -281,5 +284,96 @@ h1 {
 .card1:hover {
   transform: scale(1.01);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.158);
+}
+
+.consequence {
+  width: 100vw;
+  height: 19vw;
+  background-color: #121317;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5vw;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  text-align: center;
+}
+
+p {
+  font-weight: 600;
+}
+
+.num {
+  font-size: 48px;
+  font-weight: 800;
+}
+.rate {
+  font-size: 48px;
+  font-weight: 800;
+}
+.res_time {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.step-card {
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  font-size: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.466);
+  transition: 0.3s;
+}
+
+.camera {
+  transition: 0.3s;
+  color: var(--primary-color);
+}
+
+.camera:hover {
+  transform: scale(1.05);
+}
+
+.circle {
+  color: var(--primary-color);
+}
+
+.circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.466);
+}
+
+.step-title {
+  font-size: 20px;
+  margin-top: 28px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: var(--third-color);
+  margin-top: 15px;
+}
+
+.step-cards_reg {
+  display: flex;
 }
 

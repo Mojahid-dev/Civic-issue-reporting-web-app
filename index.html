@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CivicFix</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+    <!-- ICONS CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
@@ -30,7 +33,33 @@
             <a href="" class="sign-in">Sign In</a>
             <a href="" class="partner-cta">Partner With Us</a>
         </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <button class="close-btn" id="closeBtn">
+            <i class="ri-close-line"></i>
+        </button>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="">Solutions</a></li>
+                <li><a href="">How it Works</a></li>
+                <li><a href="">Case Studies</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-auth">
+            <a href="" class="mobile-sign-in">Sign In</a>
+            <a href="" class="mobile-partner-cta">Partner With Us</a>
+        </div>
+    </div>
 
     <main class="hero">
         <div class="left-section">
@@ -87,15 +116,16 @@
 
                 <h1 class="card-title">Evidence-First Reporting</h1>
 
-                <p class="para">High-fidelity data collection with verified GPS metadata and tamper-proof photo logs.</p>
+                <p class="para">High-fidelity data collection with verified GPS metadata and tamper-proof photo logs.
+                </p>
 
                 <div class="learn-more first">
                     <a href="">
                         Learn More <i class="ri-arrow-right-line"></i>
-                    </a> 
+                    </a>
                 </div>
             </div>
-            
+
             <div class="card1">
                 <div class="icon">
                     <i class="ri-map-pin-2-line"></i>
@@ -108,7 +138,7 @@
                 <div class="learn-more second">
                     <a href="">
                         Learn More <i class="ri-arrow-right-line"></i>
-                    </a> 
+                    </a>
                 </div>
             </div>
 
@@ -124,7 +154,7 @@
                 <div class="learn-more third">
                     <a href="">
                         Learn More <i class="ri-arrow-right-line"></i>
-                    </a> 
+                    </a>
                 </div>
             </div>
 
@@ -140,15 +170,204 @@
                 <div class="learn-more forth">
                     <a href="">
                         Learn More <i class="ri-arrow-right-line"></i>
-                    </a> 
+                    </a>
                 </div>
             </div>
 
-            
+
         </div>
     </section>
 
+
+    <section class="consequence">
+        <div class="resol">
+            <h1 class="num">500K+</h1>
+            <p>ISSUE RESOLVED</p>
+        </div>
+
+        <div class="percent">
+            <h1 class="rate">98%</h1>
+            <p>CITIZEN SATISFACTION</p>
+        </div>
+
+        <div class="time">
+            <h1 class="res_time">24min</h1>
+            <p>AVG. RESPONSE TIME</p>
+        </div>
+
+        <div class="places">
+            <h1 class="num">150+</h1>
+            <p>CITIES ACTIVE</p>
+        </div>
+    </section>
+
+    <section class="steps">
+        <h1>Transparency by Design</h1>
+
+        <div class="step-cards_reg">
+
+            <div class="step-card step-card1">
+                <div class="circle">
+                    <i class="camera ri-camera-line"></i>
+                </div>
+
+                <h4 class="step-title">1. Detect & Capture</h4>
+                <p class="step-desc">Residents securely capture infrastructure anomalies with automated geolocation
+                    metadata.</p>
+            </div>
+
+            <div class="step-card step-card2">
+                <div class="circle">
+                    <i class="ri-git-fork-line"></i>
+                </div>
+
+                <h4 class="step-title">2. Verify & Route</h4>
+                <p class="step-desc">AI engine validates reports and instantly assigns work orders to specific
+                    department leads.</p>
+            </div>
+
+            <div class="step-card step-card3">
+                <div class="circle">
+                    <i class="ri-checkbox-circle-line"></i>
+                </div>
+
+                <h4 class="step-title">3. Resolve & Feedback</h4>
+                <p class="step-desc">Closing the loop with real-time status updates and automated resolution
+                    certificates.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonial-card card-light">
+                <div class="testimonial-avatar">
+                    <img src="/assets/avatar1.jpg" alt="Director Sarah Vance">
+                </div>
+                <h3 class="testimonial-name">Director Sarah Vance</h3>
+                <p class="testimonial-title">Public Works, Austin TX</p>
+                <p class="testimonial-text">"CivicFix has fundamentally transformed our responsiveness. We've seen a 40%
+                    reduction in manual data entry and a much happier public."</p>
+            </div>
+
+            <div class="testimonial-card card-dark">
+                <div class="testimonial-avatar">
+                    <img src="/assets/avatar2.jpg" alt="David Miller">
+                </div>
+                <h3 class="testimonial-name">David Miller</h3>
+                <p class="testimonial-title">Community Lead, Seattle</p>
+                <p class="testimonial-text">"Being able to see exactly where my report is in the queue makes me feel
+                    like my voice actually matters. It's the future of civic duty."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-heading">Ready to transform your city's infrastructure?</h2>
+            <p class="cta-subtext">Join hundreds of progressive municipalities leading the data-driven revolution.</p>
+            <div class="cta-buttons">
+                <button class="cta-btn primary-btn">Schedule a Demo</button>
+                <button class="cta-btn secondary-btn">View Case Studies</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <span class="logo-icon">📱</span>
+                    <span class="logo-text">CivicFix</span>
+                </div>
+                <p class="footer-description">The intelligence layer for modern cities. Empowering communities through
+                    transparency and technological excellence.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="ri-globe-line"></i></a>
+                    <a href="#" class="social-icon"><i class="ri-share-forward-line"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4 class="column-title">PLATFORM</h4>
+                    <ul class="column-links">
+                        <li><a href="#">Reporting Tool</a></li>
+                        <li><a href="#">Admin Dashboard</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">API Access</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="column-title">RESOURCES</h4>
+                    <ul class="column-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column newsletter">
+                    <h4 class="column-title">STAY UPDATED</h4>
+                    <p class="newsletter-text">Get the latest civic tech insights delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-compliance">
+                <span class="compliance-badge"><i class="ri-shield-check-line"></i> ISO 27001</span>
+                <span class="compliance-badge"><i class="ri-shield-line"></i> GDPR COMPLIANT</span>
+                <span class="compliance-badge"><i class="ri-shield-lock-line"></i> SOC2 TYPE II</span>
+            </div>
+            <p class="footer-copyright">© 2026 CivicFix Infrastructure Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const closeBtn = document.getElementById('closeBtn');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileSidebar.classList.toggle('active');
+            document.body.style.overflow = mobileSidebar.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            mobileSidebar.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close sidebar when a link is clicked
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav a, .mobile-auth a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileSidebar.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close sidebar when clicking outside
+        mobileSidebar.addEventListener('click', (e) => {
+            if (e.target === mobileSidebar) {
+                menuToggle.classList.remove('active');
+                mobileSidebar.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
         // Initialize map
         var map = L.map('map').setView([25.6156, 85.1152], 14); // BIHAR
 
