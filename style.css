@@ -147,6 +147,9 @@ body {
 .cta-btn {
   display: flex;
   gap: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .cta i {
