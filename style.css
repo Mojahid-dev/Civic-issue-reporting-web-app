@@ -4,6 +4,7 @@
 @import url(css/components.css);
 @import url(css/layout.css);
 @import url(css/variables.css);
+@import url(css/report.css);
 
 /* Reduce Animation Impact - Only animate when user prefers motion */
 @keyframes dimAndLight {

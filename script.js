@@ -99,3 +99,12 @@ if (
     }
   });
 }
+
+
+// ONCLICK HANDLER FOR ISSUE REPORT BUTTON
+
+let reportBtn = document.querySelector(".issue-report-btn");
+
+reportBtn.addEventListener("click", function() {
+  window.location.href = "/html/report.html";
+})
