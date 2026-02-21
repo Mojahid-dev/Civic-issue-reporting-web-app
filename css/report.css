@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +49,15 @@ body {
   font-weight: 800;
 }
 
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .navigation ul {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   font-size: var(--md-font-size);
   font-weight: 700;
 }
@@ -58,8 +66,42 @@ body {
   list-style: none;
 }
 
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.prev-btn:hover .arrow{
+  transform: translateX(-5px);
+}
+
 .navigation ul li a {
   text-decoration: none;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
   color: var(--secondary-color);
+}
+
+.header .reg-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.header .reg-btn a.sign-in_report {
+  text-decoration: none;
+  color: var(--bg-color);
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.header .reg-btn a.sign-in:hover {
+  background-color: var(--secondary-cta-color);
+  color: var(--primary-color);
 }
