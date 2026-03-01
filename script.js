@@ -99,3 +99,12 @@ if (
     }
   });
 }
+
+
+// Adding the click event to the report issue so that it opens the next report webpage
+
+let reportBtn = document.querySelector(".cta-btn .issue-report-btn");
+
+reportBtn.addEventListener("click", function() {
+   window.location.href = "report.html"
+})
